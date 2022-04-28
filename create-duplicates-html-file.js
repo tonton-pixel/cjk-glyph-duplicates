@@ -118,6 +118,12 @@ let htmlText =
             font-size: larger;
             font-weight: bold;
         }
+        table th a,
+        table td a
+        {
+            font-size: smaller;
+            font-weight: normal;
+        }
     </style>
 </head>
 <body>
@@ -132,12 +138,13 @@ for (let collection in duplicates)
     stringArray.push (`<h3>${collection} Collection</h3>`);
     for (let character in duplicates[collection])
     {
+        let pageLink = `https://www.unicode.org/ivd/data/2020-11-06/IVD_Charts_${collection}.pdf#page=${getSequenceRange (collection, duplicates[collection][character][0].ivs).page}`;
         stringArray.push (`<table>`);
-        stringArray.push (`<tr><th colspan="${duplicates[collection][character].length}"><span class="ivs">U+${character.codePointAt (0).toString (16).toUpperCase ()} ${character}</span></th></tr>`);
+        stringArray.push (`<tr><th colspan="${duplicates[collection][character].length}"><span class="ivs">U+${character.codePointAt (0).toString (16).toUpperCase ()} ${character}</span><br><a href="${pageLink}" title="${pageLink}" target="_blank">PDF&nbsp;🔗</a></th></tr>`);
         stringArray.push (`<tr>`);
         for (let ivs of duplicates[collection][character])
         {
-            stringArray.push (`<td><img class="image" src="${ivs.dataURL}"></td>`);
+            stringArray.push (`<td><img class="image" alt="${ivs.ivs}" src="${ivs.dataURL.replace (/\s/g, "")}"></td>`);
         }
         stringArray.push (`</tr>`);
         stringArray.push (`<tr>`);
@@ -145,7 +152,6 @@ for (let collection in duplicates)
         {
             let [ base, vs ] = ivs.ivs;
             stringArray.push (`<td>`);
-            // stringArray.push (`U+${base.codePointAt (0).toString (16).toUpperCase ()} `);
             stringArray.push (`<span class="vs">U+${vs.codePointAt (0).toString (16).toUpperCase ()}</span>`);
             stringArray.push (`</td>`);
         }
