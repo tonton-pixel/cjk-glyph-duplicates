@@ -15,5 +15,6 @@ List of CJK glyph duplicates of IVSes in the same collection.
     Moji_Joho: U+28119 𨄙
 ```
 
-<img width="306" alt="Screenshot 1" src="https://user-images.githubusercontent.com/26766930/166122519-08161fb5-9db5-413d-a67d-173cc3f93d43.png">
-<img width="220" alt="Screenshot 2" src="https://user-images.githubusercontent.com/26766930/166122583-c43b4c8a-2459-4b5c-beee-9c9e9192ce39.png">
+<img width="306" alt="Screenshot 1" src="Screenshot 1.png">
+
+<img width="220" alt="Screenshot 2" src="Screenshot 2.png">
