@@ -160,7 +160,7 @@ for (let collection in duplicates)
     }
 };
 //
-fs.writeFileSync (path.join (__dirname, 'IVS glyph duplicates.html'), htmlText.replace ('{{duplicates}}', stringArray.join ("")));
+fs.writeFileSync (path.join (__dirname, 'IVS-glyph-duplicates.html'), htmlText.replace ('{{duplicates}}', stringArray.join ("")));
 //
 let stop = new Date ();
 console.log (`Processed in ${((stop - start) / 1000).toFixed (2)} seconds`);

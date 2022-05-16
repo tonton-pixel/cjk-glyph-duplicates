@@ -2,7 +2,7 @@
 
 List of CJK glyph duplicates of IVSes in the same collection.
 
-- Running the Node script `create-duplicates-html-file.js` generates the HTML file `IVS glyph duplicates.html`.
+- Running the Node script `create-duplicates-html-file.js` generates the HTML file `IVS-glyph-duplicates.html`.
 
 - Here is the resulting list of characters exhibiting strictly duplicate glyphs, graphically speaking:
 
