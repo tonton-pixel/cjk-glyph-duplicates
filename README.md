@@ -4,6 +4,8 @@ List of CJK glyph duplicates of IVSes in the same collection.
 
 - Running the Node script `create-duplicates-html-file.js` generates the HTML file `IVS-glyph-duplicates.html`.
 
+- A pre-generated HTML file is available for download from the [latest release](https://github.com/tonton-pixel/cjk-glyph-duplicates/releases/latest).
+
 - Here is the resulting list of characters exhibiting strictly duplicate glyphs, graphically speaking:
 
 ```
